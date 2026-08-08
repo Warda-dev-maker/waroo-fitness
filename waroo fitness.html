@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waroo Fitness</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+    <style>
+
+        /* CSS Reset */
+        body {
+            font-family: "Bungee", sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+            background: url('fitness.png');
+        }
+
+        /* Logo */
+        .left {
+            display: inline-block;
+            position: absolute;
+            left: 60px;
+            top: 20px;
+            text-align: center;
+        }
+
+        .left img {
+            width: 100px;
+            height: auto;
+        }
+
+        .left div {
+            line-height: 19px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        /* Navbar */
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 29px auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 14px;
+        }
+
+        .navbar li a {
+            color: black;
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: gray;
+        }
+
+        /* Buttons */
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            display: inline-block;
+        }
+
+        .btn {
+            font-family: "Bungee", sans-serif;
+            margin: 0 9px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(38, 37, 37);
+        }
+
+        /* Registration Form */
+        .container {
+            border: 2px solid black;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 33%;
+            border-radius: 28px;
+            text-align: center;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 500px;
+            padding: 8px;
+            border: 2px solid black;
+            margin: 11px auto;
+            border-radius: 10px;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .container button {
+            display: block;
+            width: 34%;
+            margin: 20px auto;
+        }
+
+        /* Trainers Section */
+        .trainers {
+            text-align: center;
+            margin: 80px auto;
+            width: 90%;
+        }
+
+        .trainer-card {
+            display: inline-block;
+            vertical-align: top;
+            width: 280px;
+            min-height: 200px;
+            margin: 15px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .trainer-card h2 {
+            margin-top: 5px;
+        }
+
+        .trainer-card p {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+        }
+
+        /* Gym Plans */
+        .plans {
+            text-align: center;
+            margin: 80px auto;
+            width: 90%;
+        }
+
+        .plan-card {
+            display: inline-block;
+            vertical-align: top;
+            width: 280px;
+            min-height: 210px;
+            margin: 15px;
+            padding: 20px;
+            border: 2px solid black;
+            border-radius: 20px;
+            background-color: white;
+            box-sizing: border-box;
+        }
+
+        .plan-card h2 {
+            margin-top: 5px;
+        }
+
+        .plan-card p {
+            font-family: "Ubuntu", sans-serif;
+            font-size: 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <!-- Logo -->
+        <div class="left">
+            <img src="html.code.png" alt="Waroo Fitness Logo">
+            <div>Waroo Fitness</div>
+        </div>
+
+        <!-- Navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+
+    </header>
+
+
+    <!-- Registration Form -->
+    <div class="container">
+
+        <h1>Join the Best Gym of Jampur Now</h1>
+
+        <form action="noaction.php">
+
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="age" placeholder="Enter Your Age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="gender" placeholder="Enter Your Gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="locality" placeholder="Enter Your Locality">
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Enter Your Email Id">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="phone" placeholder="Enter Your Phone Number">
+            </div>
+
+            <button class="btn" type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Gym Trainers -->
+    <section class="trainers">
+
+        <h1>Our Gym Trainers</h1>
+
+        <div class="trainer-card">
+            <h2>Ali Trainer</h2>
+            <p>📧 Email: alitrainer@gmail.com</p>
+            <p>📞 Phone: 0300-1234567</p>
+            <p>💪 Specialization: Chest & Muscle Building</p>
+        </div>
+
+        <div class="trainer-card">
+            <h2>Ahmed Trainer</h2>
+            <p>📧 Email: ahmedtrainer@gmail.com</p>
+            <p>📞 Phone: 0312-7654321</p>
+            <p>💪 Specialization: Weight Training & Fitness</p>
+        </div>
+
+        <div class="trainer-card">
+            <h2>Usman Trainer</h2>
+            <p>📧 Email: usmantrainer@gmail.com</p>
+            <p>📞 Phone: 0333-4567890</p>
+            <p>💪 Specialization: Full Body Training</p>
+        </div>
+
+    </section>
+
+
+    <!-- Gym Plans -->
+    <section class="plans">
+
+        <h1>Gym Plans & Prices</h1>
+
+        <div class="plan-card">
+            <h2>Chest & Muscle</h2>
+            <p>Duration: 1 Month</p>
+            <p>Price: Rs. 3000</p>
+            <p>Chest, Shoulders, Triceps & Basic Workout Guidance</p>
+        </div>
+
+        <div class="plan-card">
+            <h2>Full Body Fitness</h2>
+            <p>Duration: 1 Month</p>
+            <p>Price: Rs. 4000</p>
+            <p>Full Body Workout & Fitness Guidance</p>
+        </div>
+
+        <div class="plan-card">
+            <h2>Weight Training</h2>
+            <p>Duration: 1 Month</p>
+            <p>Price: Rs. 3500</p>
+            <p>Strength Exercises & Weight Training</p>
+        </div>
+
+        <div class="plan-card">
+            <h2>Personal Trainer</h2>
+            <p>Duration: 1 Month</p>
+            <p>Price: Rs. 6000</p>
+            <p>Personal Training & Workout Guidance</p>
+        </div>
+
+    </section>
+
+</body>
+</html>
